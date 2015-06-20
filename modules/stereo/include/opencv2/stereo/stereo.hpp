@@ -7,11 +7,12 @@
 //  copy or use the software.
 //
 //
-//                           License Agreement
+//                          License Agreement
 //                For Open Source Computer Vision Library
 //
 // Copyright (C) 2000-2008, Intel Corporation, all rights reserved.
 // Copyright (C) 2009, Willow Garage Inc., all rights reserved.
+// Copyright (C) 2013, OpenCV Foundation, all rights reserved.
 // Third party copyrights are property of their respective owners.
 //
 // Redistribution and use in source and binary forms, with or without modification,
@@ -40,13 +41,9 @@
 //
 //M*/
 
-#ifndef __OPENCV_XPHOTO_HPP__
-#define __OPENCV_XPHOTO_HPP__
-
-/** @defgroup xphoto Additional photo processing algorithms
-*/
-
-#include "xphoto/inpainting.hpp"
-#include "xphoto/white_balance.hpp"
-#include "xphoto/dct_image_denoising.hpp"
+#ifdef __OPENCV_BUILD
+#error this is a compatibility header which should not be used inside the OpenCV library
 #endif
+
+#include "opencv2/stereo.hpp"
+
